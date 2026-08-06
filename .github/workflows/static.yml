@@ -39,9 +39,4 @@ jobs:
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
-        with:
-          # GitHub Pages deployments are currently taking longer than the
-          # action's default 10-minute polling window.
-          timeout: 1800000
-          error_count: 30
+        uses: actions/deploy-pages@v4
