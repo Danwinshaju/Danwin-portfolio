@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio of Danwin Shaju, a full-stack and AI developer building modern web applications, data products, and computer-vision systems.">
-<title>Danwin Shaju | Full-Stack &amp; AI Developer</title>
+<meta name="description" content="Portfolio of Danwin Shaju, a junior full-stack and MERN stack developer building responsive web applications, secure APIs, and data-driven products.">
+<title>Danwin Shaju | Junior Full-Stack &amp; MERN Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./about.css">
+<link rel="stylesheet" href="./about.css?v=20260806-3">
 </head>
 <body>
 
@@ -30,9 +30,22 @@
   </ul>
 
   <div class="nav-actions">
-  <a href="https://wa.me/918270386569" target="_blank" rel="noopener" class="nav-hire">
-    Hire Me →
-  </a>
+  <div class="hire-menu-wrap">
+    <button class="nav-hire" id="hireMenuButton" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="hireMenu">
+      Hire Me →
+    </button>
+    <div class="hire-menu" id="hireMenu" role="menu" aria-hidden="true">
+      <div class="hire-menu-heading">Choose how to connect</div>
+      <a href="mailto:danwin212@gmail.com?subject=Portfolio%20Opportunity" role="menuitem" class="hire-option">
+        <span class="hire-option-icon">✉</span>
+        <span><strong>Email</strong><small>danwin212@gmail.com</small></span>
+      </a>
+      <a href="https://wa.me/918270386569?text=Hi%20Danwin%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" role="menuitem" class="hire-option">
+        <span class="hire-option-icon">💬</span>
+        <span><strong>WhatsApp</strong><small>+91 82703 86569</small></span>
+      </a>
+    </div>
+  </div>
   <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNav"><span></span><span></span></button>
   </div>
 </nav>
@@ -54,7 +67,7 @@
       Available for opportunities
     </div>
     <h1 class="hero-name">
-      <span class="hero-kicker">FULL-STACK + AI DEVELOPER</span>
+      <span class="hero-kicker">JUNIOR FULL-STACK + MERN DEVELOPER</span>
       <span class="filled">DANWIN</span>
       <span class="outline">SHAJU</span>
     </h1>
@@ -63,7 +76,7 @@
     </p>
     <div class="hero-actions">
       <a href="#projects" class="btn-lime">View Projects →</a>
-      <a href="./assets/danwin shaju[frontend developer].pdf" download class="btn-ghost">Download Resume</a>
+      <a href="./assets/Danwin%20Shaju%20Full-Stack%20MERN%20Resume.pdf" download class="btn-ghost">Download Resume</a>
       <a href="#contact" class="btn-ghost">Let's Talk</a>
     </div>
     <div class="hero-stats">
@@ -95,7 +108,7 @@
       <div class="code-body">
         <span class="c-key">const</span> <span class="c-val">developer</span> <span class="c-brace">= {</span><br>
         &nbsp;&nbsp;<span class="c-key2">name</span><span class="c-brace">:</span> <span class="c-str">"Danwin Shaju"</span><span class="c-brace">,</span><br>
-        &nbsp;&nbsp;<span class="c-key2">role</span><span class="c-brace">:</span> <span class="c-str">"Full-Stack + AI Developer"</span><span class="c-brace">,</span><br>
+        &nbsp;&nbsp;<span class="c-key2">role</span><span class="c-brace">:</span> <span class="c-str">"Junior Full-Stack Developer"</span><span class="c-brace">,</span><br>
         &nbsp;&nbsp;<span class="c-key2">location</span><span class="c-brace">:</span> <span class="c-str">"Tamil Nadu, India"</span><span class="c-brace">,</span><br>
         &nbsp;&nbsp;<span class="c-key2">stack</span><span class="c-brace">:</span> <span class="c-brace">[</span><span class="c-str">"React"</span><span class="c-brace">,</span> <span class="c-str">"Node"</span><span class="c-brace">,</span> <span class="c-str">"MongoDB"</span><span class="c-brace">],</span><br>
         &nbsp;&nbsp;<span class="c-key2">status</span><span class="c-brace">:</span> <span class="c-str">"open_to_work"</span><span class="c-brace">,</span><br>
@@ -108,9 +121,9 @@
         <span class="tech-badge tb-cyan">Node.js</span>
         <span class="tech-badge tb-cyan">Express</span>
         <span class="tech-badge tb-purple">MongoDB</span>
-        <span class="tech-badge tb-white">Tailwind CSS</span>
+        <span class="tech-badge tb-white">Redux Toolkit</span>
         <span class="tech-badge tb-white">Python</span>
-        <span class="tech-badge tb-purple">FastAPI</span>
+        <span class="tech-badge tb-purple">Power BI</span>
         <span class="tech-badge tb-white">TypeScript</span>
         <span class="tech-badge tb-white">Git</span>
       </div>
@@ -128,47 +141,36 @@
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="about-initials" style="display:none">DS</div>
         </div>
-        <div class="about-float-card">
-          <div class="about-fc-num">7.0</div>
-          <div class="about-fc-lbl">CGPA Score</div>
-        </div>
-        <div class="about-float-card2">
-          <div class="about-fc2-ico">🎓</div>
-          <div class="about-fc2-txt">
-            <strong>MERN Stack Developer</strong>
-            Trainee
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="about-text-side reveal d2">
       <div class="section-label">About Me</div>
       <h2 class="section-heading">Passionate<br><span>Builder.</span></h2>
-      <p>I'm a <strong>MERN Stack Developer</strong> with a deep passion for creating modern, responsive, and interactive web applications. I specialize in building end-to-end digital solutions that are both visually stunning and functionally robust.</p>
+      <p>I'm a <strong>Junior Full-Stack and MERN Stack Developer</strong> with a deep passion for creating modern, responsive, and interactive web applications. I build end-to-end digital solutions with accessible interfaces, secure APIs, and reliable database integration.</p>
       <p>My background in <strong>Data Science</strong> gives me a unique analytical edge — combining statistical thinking with creative frontend design to build experiences that are smart, efficient, and beautiful.</p>
-      <p>Currently a final-year B.Sc. Data Science student, actively seeking roles as a <strong>Frontend</strong> or <strong>MERN Stack Developer</strong> where I can contribute and grow.</p>
-      <div class="about-highlights">
-        <div class="hl-card">
-          <div class="hl-icon lime">⚛️</div>
-          <div class="hl-name">Frontend Focus</div>
-          <div class="hl-sub">React + Tailwind CSS</div>
-        </div>
-        <div class="hl-card">
-          <div class="hl-icon cyan">🌐</div>
-          <div class="hl-name">Full Stack</div>
-          <div class="hl-sub">Node.js + Express</div>
-        </div>
-        <div class="hl-card">
-          <div class="hl-icon purple">🗄️</div>
-          <div class="hl-name">Databases</div>
-          <div class="hl-sub">MongoDB + MySQL</div>
-        </div>
-        <div class="hl-card">
-          <div class="hl-icon orange">📊</div>
-          <div class="hl-name">Data Science</div>
-          <div class="hl-sub">Python + Analytics</div>
-        </div>
+      <p>I'm a B.Sc. Data Science graduate actively seeking opportunities as a <strong>Junior Full-Stack Developer</strong> or <strong>MERN Stack Developer</strong> where I can contribute and grow.</p>
+    </div>
+    <div class="about-highlights reveal">
+      <div class="hl-card">
+        <div class="hl-icon lime">⚛️</div>
+        <div class="hl-name">Frontend Development</div>
+        <div class="hl-sub">React.js · Redux Toolkit · TypeScript</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon cyan">🌐</div>
+        <div class="hl-name">Backend Development</div>
+        <div class="hl-sub">Node.js · Express.js · REST APIs</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon purple">🗄️</div>
+        <div class="hl-name">Database Systems</div>
+        <div class="hl-sub">MongoDB · Mongoose · SQL</div>
+      </div>
+      <div class="hl-card">
+        <div class="hl-icon orange">📊</div>
+        <div class="hl-name">Data &amp; Analytics</div>
+        <div class="hl-sub">Python · Power BI · Machine Learning</div>
       </div>
     </div>
   </div>
@@ -182,7 +184,7 @@
         <div class="section-label">My Skills</div>
         <h2 class="section-heading">What I <span>Work With</span></h2>
       </div>
-      <p class="section-sub reveal d2">Proficient across the full MERN stack with modern tooling — from pixel-perfect UIs to scalable backends.</p>
+      <p class="section-sub reveal d2">A practical full-stack and data toolkit spanning responsive interfaces, secure APIs, databases, analytics, and AI.</p>
     </div>
     <div class="skills-grid">
       <div class="skill-panel p-lime reveal d1">
@@ -190,6 +192,8 @@
         <div class="sp-title">Frontend</div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">React.js</span><span class="sr-pct">88%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="88"></div></div></div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">JavaScript ES6+</span><span class="sr-pct">85%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="85"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">TypeScript</span><span class="sr-pct">78%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="78"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">Redux Toolkit</span><span class="sr-pct">75%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="75"></div></div></div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">HTML5 / CSS3</span><span class="sr-pct">92%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="92"></div></div></div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">Bootstrap</span><span class="sr-pct">85%</span></div><div class="sr-bar"><div class="sr-fill fill-lime" data-w="85"></div></div></div>
       </div>
@@ -205,31 +209,33 @@
         <span class="sp-icon">🗄️</span>
         <div class="sp-title">Database</div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">MongoDB</span><span class="sr-pct">78%</span></div><div class="sr-bar"><div class="sr-fill fill-purple" data-w="78"></div></div></div>
-        <div class="skill-row"><div class="sr-top"><span class="sr-name">MySQL</span><span class="sr-pct">72%</span></div><div class="sr-bar"><div class="sr-fill fill-purple" data-w="72"></div></div></div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">Mongoose ODM</span><span class="sr-pct">75%</span></div><div class="sr-bar"><div class="sr-fill fill-purple" data-w="75"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">SQL</span><span class="sr-pct">72%</span></div><div class="sr-bar"><div class="sr-fill fill-purple" data-w="72"></div></div></div>
       </div>
       <div class="skill-panel p-orange reveal d4">
         <span class="sp-icon">🛠️</span>
-        <div class="sp-title">Tools</div>
+        <div class="sp-title">Data &amp; Tools</div>
         <div class="skill-row"><div class="sr-top"><span class="sr-name">Git &amp; GitHub</span><span class="sr-pct">85%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="85"></div></div></div>
-        <div class="skill-row"><div class="sr-top"><span class="sr-name">Python</span><span class="sr-pct">50%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="50"></div></div></div>
-        <div class="skill-row"><div class="sr-top"><span class="sr-name">Figma</span><span class="sr-pct">65%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="65"></div></div></div>
-        <div class="skill-row"><div class="sr-top"><span class="sr-name">VS Code</span><span class="sr-pct">95%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="95"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">Python &amp; Machine Learning</span><span class="sr-pct">72%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="72"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">Power BI / DAX</span><span class="sr-pct">78%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="78"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">NLP &amp; Data Analytics</span><span class="sr-pct">70%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="70"></div></div></div>
+        <div class="skill-row"><div class="sr-top"><span class="sr-name">Postman / Visual Studio</span><span class="sr-pct">85%</span></div><div class="sr-bar"><div class="sr-fill fill-orange" data-w="85"></div></div></div>
       </div>
     </div>
     <div class="soft-skills reveal">
       <div class="soft-intro">
         <div class="section-label">How I Work</div>
         <h3>How ideas become finished work.</h3>
-        <p>Six principles guide how I think, collaborate, and deliver &mdash; from the first question to the final detail.</p>
+        <p>Seven strengths guide how I solve problems, collaborate, communicate, and deliver dependable work.</p>
       </div>
       <div class="soft-grid">
-        <article class="soft-card"><span>01</span><h4>Problem Solving</h4><p>Break complex challenges into clear, testable steps.</p></article>
-        <article class="soft-card"><span>02</span><h4>Communication</h4><p>Share ideas, trade-offs, and progress in simple language.</p></article>
-        <article class="soft-card"><span>03</span><h4>Teamwork</h4><p>Collaborate openly, accept feedback, and support shared goals.</p></article>
-        <article class="soft-card"><span>04</span><h4>Adaptability</h4><p>Learn new tools quickly and stay calm when requirements change.</p></article>
-        <article class="soft-card"><span>05</span><h4>Ownership</h4><p>Take responsibility from the first idea through final delivery.</p></article>
-        <article class="soft-card"><span>06</span><h4>Attention to Detail</h4><p>Care about accessibility, responsive behavior, and polish.</p></article>
+        <article class="soft-card"><span>01</span><h4>Problem Solving</h4><p>Break complex challenges into clear, practical, and testable steps.</p></article>
+        <article class="soft-card"><span>02</span><h4>Critical Thinking</h4><p>Evaluate information carefully and choose solutions based on evidence.</p></article>
+        <article class="soft-card"><span>03</span><h4>Team Collaboration</h4><p>Work openly with others, welcome feedback, and support shared goals.</p></article>
+        <article class="soft-card"><span>04</span><h4>Effective Communication</h4><p>Explain ideas, progress, and technical decisions in clear language.</p></article>
+        <article class="soft-card"><span>05</span><h4>Time Management</h4><p>Prioritize tasks, stay organized, and deliver work on schedule.</p></article>
+        <article class="soft-card"><span>06</span><h4>Adaptability</h4><p>Learn new tools quickly and respond calmly to changing requirements.</p></article>
+        <article class="soft-card"><span>07</span><h4>Attention to Detail</h4><p>Care about accuracy, accessibility, responsive behavior, and polish.</p></article>
       </div>
     </div>
   </div>
@@ -261,7 +267,7 @@
         <div class="proj-body">
           <div class="proj-tags-row"><span class="proj-tag tag-ai">Latest Project</span><span class="proj-tag tag-fs">Full Stack AI</span></div>
           <div class="proj-name">AQUAGUARD AI</div>
-          <p class="proj-desc">An educational pool-safety early-warning platform that analyses video, tracks people, estimates risk over time, and manages private incident evidence through a responsive dashboard.</p>
+          <p class="proj-desc">An educational pool-safety early-warning platform that analyzes video, tracks people, estimates risk over time, and manages private incident evidence through a responsive dashboard.</p>
           <div class="project-proof"><span>Computer vision</span><span>Real-time tracking</span><span>Incident reporting</span></div>
           <div class="proj-stack"><span class="ps-chip">React</span><span class="ps-chip">TypeScript</span><span class="ps-chip">FastAPI</span><span class="ps-chip">Python</span><span class="ps-chip">MongoDB</span><span class="ps-chip">YOLO</span></div>
         </div>
@@ -269,8 +275,8 @@
 
 
       <div class="proj-card reveal d1" data-cat="frontend">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#130027,#2e0a5c,#1a0040)">
-          👗
+        <div class="proj-thumb project-preview">
+          <img src="./assets/project-previews/vogue-vivant.png" alt="Vogue Vivant fashion blog homepage" loading="lazy">
           <div class="proj-overlay">
             <a href="https://danwinshaju.github.io/vogue-vivant/" target="_blank" class="pov-btn pov-demo">Live Demo ↗</a>
             <a href="https://github.com/Danwinshaju/vogue-vivant" target="_blank" class="pov-btn pov-code">GitHub</a>
@@ -292,9 +298,9 @@
         </div>
       </div>
 
-      <div class="proj-card reveal d2" data-cat="fullstack">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#060f20,#0a2240,#061530)">
-          🎮
+      <div class="proj-card reveal d2" data-cat="frontend">
+        <div class="proj-thumb project-preview">
+          <img src="./assets/project-previews/nexa-gaming.png" alt="NEXA Gaming responsive storefront homepage" loading="lazy">
           <div class="proj-overlay">
             <a href="https://danwinshaju.github.io/NEXA-GAMING-WEB-PAGE/" target="_blank" class="pov-btn pov-demo">Live Demo ↗</a>
             <a href="https://github.com/Danwinshaju/NEXA-GAMING-WEB-PAGE" target="_blank" class="pov-btn pov-code">GitHub</a>
@@ -302,23 +308,23 @@
         </div>
         <div class="proj-body">
           <div class="proj-tags-row">
-            <span class="proj-tag tag-fs">Bootstrap</span>
-            <span class="proj-tag tag-mern">MERN</span>
+            <span class="proj-tag tag-fe">Frontend</span>
+            <span class="proj-tag tag-mern">React</span>
           </div>
           <div class="proj-name">NEXA GAMING</div>
-          <p class="proj-desc">Full-stack e-commerce platform for gaming accessories — product catalog, cart management, and user authentication built with the MERN stack.</p>
+          <p class="proj-desc">A responsive gaming storefront with reusable React components, structured navigation, interactive product browsing, and a consistent experience across screen sizes.</p>
           <div class="proj-stack">
             <span class="ps-chip">React</span>
-            <span class="ps-chip">Node.js</span>
-            <span class="ps-chip">Express</span>
-            <span class="ps-chip">MongoDB</span>
+            <span class="ps-chip">JavaScript</span>
+            <span class="ps-chip">Bootstrap</span>
+            <span class="ps-chip">React Router</span>
           </div>
         </div>
       </div>
 
       <div class="proj-card reveal d3" data-cat="frontend">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#ff6b35,#e8520a,#c84400)">
-          🍔
+        <div class="proj-thumb project-preview">
+          <img src="./assets/project-previews/savora.png" alt="Savora food website homepage" loading="lazy">
           <div class="proj-overlay">
             <a href="https://danwinshaju.github.io/savora/" target="_blank" class="pov-btn pov-demo">Live Demo ↗</a>
             <a href="https://github.com/Danwinshaju/savora" target="_blank" class="pov-btn pov-code">GitHub</a>
@@ -339,9 +345,9 @@
         </div>
       </div>
 
-      <div class="proj-card reveal d4" data-cat="frontend ai">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#0a0f2c,#1c2b6b,#0f172a)">
-          🔮
+      <div class="proj-card reveal d4" data-cat="ai">
+        <div class="proj-thumb project-preview">
+          <img src="./assets/project-previews/astrovision-ai.png" alt="AstroVision AI astronomical object classification project" loading="lazy">
           <div class="proj-overlay">
             <a href="https://danwinshaju.github.io/AstroVision-AI/" target="_blank" class="pov-btn pov-demo">Live Demo ↗</a>
             <a href="https://github.com/Danwinshaju/AstroVision-AI" target="_blank" class="pov-btn pov-code">GitHub</a>
@@ -349,16 +355,16 @@
         </div>
         <div class="proj-body">
           <div class="proj-tags-row">
-            <span class="proj-tag tag-fe">Frontend</span>
+            <span class="proj-tag tag-fs">Deep Learning</span>
             <span class="proj-tag tag-ai">AI</span>
           </div>
           <div class="proj-name">ASTROVISION AI</div>
-          <p class="proj-desc">AI-powered astrology platform featuring personalized horoscope insights, birth-chart analysis, interactive user experience, and a modern responsive design.</p>
+          <p class="proj-desc">A deep-learning system for classifying astronomical objects from imagery using transfer learning, with a FastAPI inference service and structured scientific metadata.</p>
           <div class="proj-stack">
-            <span class="ps-chip">HTML5</span>
-            <span class="ps-chip">CSS3</span>
-            <span class="ps-chip">JavaScript</span>
-            <span class="ps-chip">AI Integration</span>
+            <span class="ps-chip">Python</span>
+            <span class="ps-chip">FastAPI</span>
+            <span class="ps-chip">EfficientNet</span>
+            <span class="ps-chip">Transfer Learning</span>
           </div>
         </div>
       </div>
@@ -395,19 +401,22 @@
   <div class="inner">
     <div class="reveal">
       <div class="section-label">Experience</div>
-      <h2 class="section-heading">Course <span>Experience</span></h2>
+      <h2 class="section-heading">Professional <span>Experience</span></h2>
     </div>
     <div class="info-card reveal d2">
       <div class="card-icon">💼</div>
-      <h3>Frontend Developer</h3>
-      <h4>AITA / AIT Tech Academy</h4>
-      <p>Built responsive UI components using React.js and Tailwind CSS. Integrated REST APIs and collaborated effectively with development teams on real-world projects.</p>
+      <h3>MERN Stack Developer Intern</h3>
+      <h4>App Innovation Technologies Private Limited</h4>
+      <p>Developed responsive web applications with React.js, Redux Toolkit, JavaScript, HTML5, and CSS3. Built RESTful APIs with Node.js and Express.js, managed MongoDB operations, and integrated secure authentication and protected routes.</p>
       <div class="tags">
-        <span>Html:5</span>
-        <span>CSS</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
         <span>React.js</span>
-        <span>REST API</span>
-        <span>Git</span>
+        <span>Redux Toolkit</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>REST APIs</span>
       </div>
     </div>
   </div>
@@ -444,29 +453,29 @@
       </div>
       <div class="cert-card reveal d4">
         <span class="cert-icon">🔒</span>
-        <h3>Introduction to Cyber Security</h3>
-        <p>Cyber Security Fundamentals</p>
+        <h3>Introduction to Cybersecurity</h3>
+        <p>Cybersecurity Fundamentals</p>
         <span class="cert-year">2025</span>
-        <a href="./assets/certificates/CYBER SECURITY INTROUDUCTION.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
+        <a href="./assets/certificates/Introduction to Cybersecurity.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
       </div>
       <div class="cert-card reveal d5">
         <span class="cert-icon">💻</span>
         <h3>Introduction to Ethical Hacking</h3>
         <p>Ethical Hacking &amp; Security Testing</p>
         <span class="cert-year">2025</span>
-        <a href="./assets/certificates/ETHICAL HACKING INTRODUCTION pdf.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
+        <a href="./assets/certificates/Introduction to Ethical Hacking.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
       </div>
       <div class="cert-card reveal d6">
         <span class="cert-icon">🐉</span>
         <h3>Kali Linux Fundamentals</h3>
         <p>Linux &amp; Penetration Testing Tools</p>
         <span class="cert-year">2025</span>
-        <a href="./assets/certificates/KALI AND LINUX FUNDAMENTALS.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
+        <a href="./assets/certificates/Kali Linux Fundamentals.pdf" target="_blank" class="cert-link">View Certificate ↗</a>
       </div>
       <!-- PAPER PRESENTATION CERTIFICATE -->
 <div class="cert-card reveal d1">
     <span class="cert-icon">📄</span>
-    <h3>Journal & Paper Presentation</h3>
+    <h3>Journal &amp; Paper Presentation</h3>
     <p>
         Presented a research paper on
         <strong>Financial Sentiment Analysis Of Tweets Based On Deep Learning Approach</strong>
@@ -493,9 +502,9 @@
     </div>
     <div class="resume-box reveal d2">
       <div class="rb-big">LET'S<br>BUILD<br><span>GREAT.</span></div>
-      <p class="rb-sub">Open to Frontend &amp; MERN Stack roles. Based in Tamil Nadu — remote-friendly and ready to relocate.</p>
+      <p class="rb-sub">Open to Junior Full-Stack &amp; MERN Stack Developer roles. Based in Tamil Nadu — remote-friendly and ready to relocate.</p>
       <div class="rb-btns">
-        <a href="./assets/danwin shaju[frontend developer].pdf" download class="btn-lime">⬇ Download Resume</a>
+        <a href="./assets/Danwin%20Shaju%20Full-Stack%20MERN%20Resume.pdf" download class="btn-lime">⬇ Download Resume</a>
         <a href="#contact" class="btn-ghost">Get In Touch →</a>
       </div>
     </div>
@@ -546,6 +555,31 @@
 <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">&uarr;</button>
 
 <script>
+// Hire Me contact chooser
+const hireMenuButton=document.getElementById('hireMenuButton');
+const hireMenu=document.getElementById('hireMenu');
+function closeHireMenu(){
+  hireMenu.classList.remove('open');
+  hireMenuButton.setAttribute('aria-expanded','false');
+  hireMenu.setAttribute('aria-hidden','true');
+}
+hireMenuButton.addEventListener('click',event=>{
+  event.stopPropagation();
+  const isOpen=hireMenu.classList.toggle('open');
+  hireMenuButton.setAttribute('aria-expanded',String(isOpen));
+  hireMenu.setAttribute('aria-hidden',String(!isOpen));
+  if(isOpen) hireMenu.querySelector('a').focus();
+});
+hireMenu.addEventListener('click',event=>event.stopPropagation());
+hireMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeHireMenu));
+document.addEventListener('click',closeHireMenu);
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&hireMenu.classList.contains('open')){
+    closeHireMenu();
+    hireMenuButton.focus();
+  }
+});
+
 // Responsive navigation
 const menuToggle=document.getElementById('menuToggle');
 const mobileNav=document.getElementById('mobileNav');
