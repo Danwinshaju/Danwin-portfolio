@@ -544,7 +544,7 @@ section,#certifications,#resume,#contact,.info-section{
     align-items:start;
     padding:112px var(--px) 76px;
   }
-  .hero-right{display:none}
+  .hero-right{display:flex;justify-content:center;margin-top:4px}
   .about-inner{grid-template-columns:1fr;gap:44px}
   .about-photo-wrap{margin:0 auto}
   .proj-grid{grid-template-columns:1fr}
@@ -563,7 +563,7 @@ section,#certifications,#resume,#contact,.info-section{
   .mobile-nav a:hover{color:var(--lime)}
   body.menu-open{overflow:hidden}
   body{cursor:auto}.cursor{display:none}
-  #hero{padding-top:100px;padding-bottom:64px}
+  #hero{padding-top:100px;padding-bottom:40px}
   .hero-status{font-size:10px;padding:7px 13px;margin-bottom:18px}
   .hero-name{font-size:clamp(54px,15vw,72px);margin-bottom:20px}
   .hero-kicker{font-size:9px;letter-spacing:.18em}
@@ -574,8 +574,14 @@ section,#certifications,#resume,#contact,.info-section{
   .hero-stats{justify-content:space-between;gap:14px}
   .stat-num{font-size:34px}
   .stat-lbl{font-size:10px}
+  .code-card{max-width:640px;border-radius:16px}
+  .code-topbar{padding:12px 16px}
+  .code-title{font-size:10px}
+  .code-body{padding:18px 16px;font-size:10.5px;line-height:1.75;overflow-x:auto}
+  .tech-badges{padding:2px 16px 18px;gap:6px}
+  .tech-badge{font-size:10px;padding:4px 9px;min-height:24px}
   section,#certifications,#resume,#contact,.info-section{padding:80px var(--px)}
-  #about{padding-top:72px;padding-bottom:72px}
+  #about{padding-top:48px;padding-bottom:72px}
   .about-photo-wrap{width:min(100%,320px)}
   .about-photo-frame{height:auto;aspect-ratio:4/5}
   .about-text-side p{font-size:14px;line-height:1.75}
@@ -601,6 +607,8 @@ section,#certifications,#resume,#contact,.info-section{
   .hero-actions{grid-template-columns:1fr}
   .hero-actions .btn-lime:first-child{grid-column:auto}
   .hero-stats{gap:10px}
+  .code-body{font-size:9.5px;padding-left:13px;padding-right:13px}
+  .tech-badges{padding-left:13px;padding-right:13px}
   .contact-grid{grid-template-columns:1fr}
   .back-to-top{right:16px;bottom:16px;width:42px;height:42px}
 }
