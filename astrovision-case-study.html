@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AstroVision AI case study by Danwin Shaju: astronomical image classification using EfficientNet-B0 transfer learning, PyTorch, and FastAPI.">
+  <title>AstroVision AI Case Study | Danwin Shaju</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./case-study.css?v=20260827-2">
+</head>
+<body>
+  <header class="case-nav">
+    <a href="./index.html#hero" class="case-logo">D<span>.</span>S</a>
+    <div class="case-nav-links">
+      <a href="./index.html#projects">← Portfolio</a>
+      <a href="https://github.com/Danwinshaju/AstroVision-AI" target="_blank" rel="noopener" class="nav-primary">View GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Case Study · Deep Learning</div>
+        <h1>AstroVision <span>AI</span></h1>
+        <p class="hero-lead">An end-to-end astronomical image classification system that turns uploaded imagery into model-ready tensors, runs EfficientNet-B0 inference, and returns an interpretable prediction through a FastAPI service.</p>
+        <div class="hero-actions">
+          <a href="https://danwinshaju.github.io/AstroVision-AI/" target="_blank" rel="noopener" class="button primary">Open live interface ↗</a>
+          <a href="#architecture" class="button secondary">See architecture ↓</a>
+        </div>
+      </div>
+      <div class="hero-facts" aria-label="Project facts">
+        <article><span>Role</span><strong>AI &amp; Backend Developer</strong></article>
+        <article><span>Model</span><strong>EfficientNet-B0</strong></article>
+        <article><span>Service</span><strong>FastAPI inference API</strong></article>
+        <article><span>Status</span><strong>Educational AI prototype</strong></article>
+      </div>
+    </section>
+
+    <section class="case-section overview-grid">
+      <div>
+        <div class="section-label">01 · Overview</div>
+        <h2>From raw space imagery to a structured prediction.</h2>
+      </div>
+      <div class="overview-copy">
+        <p>Astronomical images vary in dimensions, orientation, color, and visual clarity. A useful classifier therefore needs more than a trained model: it needs a reproducible path from upload to preprocessing, inference, confidence scoring, and presentation.</p>
+        <p>AstroVision connects that complete path. A transfer-learned convolutional network performs the classification, while the API layer makes the model accessible through a practical web workflow and preserves reusable class mappings.</p>
+      </div>
+    </section>
+
+    <section class="case-section screenshot-section">
+      <div class="section-heading-row">
+        <div><div class="section-label">02 · Interface</div><h2>Science presented clearly.</h2></div>
+        <p>The interface gives users a focused way to explore the project, submit astronomical imagery, and understand the resulting classification.</p>
+      </div>
+      <figure class="product-frame">
+        <img src="./assets/project-previews/astrovision-ai.png" alt="AstroVision AI astronomical classification interface">
+        <figcaption>Responsive AstroVision AI project interface.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" id="architecture">
+      <div class="section-heading-row">
+        <div><div class="section-label">03 · Architecture</div><h2>A reproducible inference pipeline.</h2></div>
+        <p>Each layer has one clear responsibility, from accepting the source image to returning the predicted class and confidence.</p>
+      </div>
+      <div class="architecture-flow" role="img" aria-label="AstroVision architecture: browser upload to FastAPI, image preprocessing, EfficientNet inference and prediction response">
+        <article><span>01</span><strong>Web interface</strong><small>Image selection and prediction request</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>02</span><strong>FastAPI</strong><small>Upload handling and REST response</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>03</span><strong>Image pipeline</strong><small>RGB conversion, resize, tensor normalization</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>04</span><strong>EfficientNet-B0</strong><small>PyTorch inference with trained weights</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>05</span><strong>Prediction output</strong><small>Mapped label and rounded confidence</small></article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="section-label">04 · Product capabilities</div>
+      <h2>A complete model-to-interface workflow.</h2>
+      <div class="feature-grid">
+        <article><span>UPLOAD</span><h3>Image-based prediction</h3><p>Accepts a user-uploaded image, reads it with Pillow, and converts it to RGB before inference.</p></article>
+        <article><span>MODEL</span><h3>Transfer learning</h3><p>Adapts ImageNet-pretrained EfficientNet-B0 features to the project’s astronomical image classes.</p></article>
+        <article><span>DATA</span><h3>Automatic class discovery</h3><p>Scans leaf folders for labeled images and creates a saved class mapping for consistent training and inference.</p></article>
+        <article><span>API</span><h3>Structured response</h3><p>The FastAPI endpoint returns the predicted label and confidence as a simple JSON response.</p></article>
+        <article><span>TRAIN</span><h3>Validation workflow</h3><p>Tracks training and validation performance and saves the model state with the strongest validation result.</p></article>
+        <article><span>INFO</span><h3>Scientific context</h3><p>Organized metadata files cover astronomical groups including planets, stars, galaxies, nebulae, and comets.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="section-label">05 · Engineering decisions</div>
+      <h2>Challenges solved deliberately.</h2>
+      <div class="decision-list">
+        <article><div class="decision-number">01</div><div><h3>Limited domain-specific training data</h3><p><strong>Solution:</strong> Transfer learning starts from pretrained ImageNet features, freezes the feature extractor, and trains a replacement classification head for the detected classes.</p></div></article>
+        <article><div class="decision-number">02</div><div><h3>Inconsistent source images</h3><p><strong>Solution:</strong> Images are converted to RGB, resized to 224 × 224, transformed into tensors, and normalized with the same values used by the pretrained model family.</p></div></article>
+        <article><div class="decision-number">03</div><div><h3>Keeping labels aligned with weights</h3><p><strong>Solution:</strong> The training pipeline saves the discovered class order as JSON, and the inference service loads that exact mapping alongside the model weights.</p></div></article>
+        <article><div class="decision-number">04</div><div><h3>Turning a notebook-style model into a product</h3><p><strong>Solution:</strong> Model loading and prediction are separated from FastAPI routing, allowing a web client to use the trained classifier through a focused `/predict` contract.</p></div></article>
+      </div>
+    </section>
+
+    <section class="case-section outcome-section">
+      <div>
+        <div class="section-label">06 · Outcome</div>
+        <h2>One connected deep-learning application.</h2>
+        <p>The project demonstrates the full applied-AI lifecycle: dataset discovery, augmentation, transfer learning, validation, model persistence, reproducible preprocessing, inference, API delivery, and a user-facing experience.</p>
+      </div>
+      <div class="outcome-metrics">
+        <article><strong>224²</strong><span>Model input resolution</span></article>
+        <article><strong>80/20</strong><span>Training and validation split</span></article>
+        <article><strong>15</strong><span>Configured training epochs</span></article>
+      </div>
+    </section>
+
+    <section class="case-section stack-section">
+      <div class="section-label">07 · Technology stack</div>
+      <h2>Built for training and delivery.</h2>
+      <div class="stack-list"><span>Python</span><span>PyTorch</span><span>Torchvision</span><span>EfficientNet-B0</span><span>Transfer Learning</span><span>FastAPI</span><span>Pillow</span><span>NumPy</span><span>Jinja2</span><span>Uvicorn</span><span>REST API</span><span>GitHub</span></div>
+    </section>
+
+    <section class="case-section limits-grid">
+      <article>
+        <div class="section-label">08 · Current limitations</div>
+        <h2>Results need context.</h2>
+        <ul><li>Educational classifier, not a tool for professional astronomical research.</li><li>Predictions depend on the coverage and quality of the training dataset.</li><li>Confidence is a model score, not proof that a prediction is scientifically correct.</li><li>Evaluation metrics should be published before making comparative performance claims.</li></ul>
+      </article>
+      <article>
+        <div class="section-label">09 · Next steps</div>
+        <h2>Roadmap.</h2>
+        <ul><li>Publish per-class precision, recall, F1 score, and a confusion matrix.</li><li>Add input validation and clear handling for unsupported or corrupted images.</li><li>Connect the organized scientific metadata to each prediction result.</li><li>Package model serving for a reproducible cloud deployment.</li></ul>
+      </article>
+    </section>
+
+    <section class="case-cta">
+      <div><div class="section-label">Explore the build</div><h2>Try the interface or inspect the source.</h2></div>
+      <div class="hero-actions"><a href="https://danwinshaju.github.io/AstroVision-AI/" target="_blank" rel="noopener" class="button primary">Live interface ↗</a><a href="https://github.com/Danwinshaju/AstroVision-AI" target="_blank" rel="noopener" class="button secondary">View GitHub ↗</a></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Danwin Shaju</span><span>AstroVision AI · Educational image-classification project</span></footer>
+</body>
+</html>
