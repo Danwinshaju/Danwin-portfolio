@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaGuard AI case study by Danwin Shaju: a privacy-focused full-stack pool-safety early-warning platform built with React, TypeScript, FastAPI, MongoDB, Python, and YOLO.">
+  <title>AquaGuard AI Case Study | Danwin Shaju</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./case-study.css?v=20260827-1">
+</head>
+<body>
+  <header class="case-nav">
+    <a href="./index.html#hero" class="case-logo">D<span>.</span>S</a>
+    <div class="case-nav-links">
+      <a href="./index.html#projects">← Portfolio</a>
+      <a href="https://github.com/Danwinshaju/AquaGuard-AI" target="_blank" rel="noopener" class="nav-primary">View GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Case Study · Full-Stack AI</div>
+        <h1>AquaGuard <span>AI</span></h1>
+        <p class="hero-lead">A privacy-focused educational early-warning platform that analyzes pool video, tracks people, estimates behavioral risk over time, and organizes incident evidence for review.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/Danwinshaju/AquaGuard-AI" target="_blank" rel="noopener" class="button primary">Explore the source ↗</a>
+          <a href="#architecture" class="button secondary">See architecture ↓</a>
+        </div>
+      </div>
+      <div class="hero-facts" aria-label="Project facts">
+        <article><span>Role</span><strong>Sole Full-Stack AI Developer</strong></article>
+        <article><span>Timeline</span><strong>Apr-Jun 2026</strong></article>
+        <article><span>Platform</span><strong>Responsive web application</strong></article>
+        <article><span>Status</span><strong>Advanced educational prototype</strong></article>
+      </div>
+    </section>
+
+    <section class="case-section overview-grid">
+      <div>
+        <div class="section-label">01 · Overview</div>
+        <h2>From video to an explainable safety signal.</h2>
+      </div>
+      <div class="overview-copy">
+        <p>Pool monitoring creates a difficult engineering problem: individual frames rarely provide enough context, while raw detections alone cannot explain whether behavior is becoming risky.</p>
+        <p>AquaGuard combines detection, tracking, movement history, pose signals, and time-based risk evaluation. The result is a review workflow that highlights possible incidents while keeping the human operator responsible for verification and response.</p>
+      </div>
+    </section>
+
+    <section class="case-section screenshot-section">
+      <div class="section-heading-row">
+        <div><div class="section-label">02 · Interface</div><h2>Private by design.</h2></div>
+        <p>The first screen establishes account ownership before users can access cameras, reports, incidents, or evidence.</p>
+      </div>
+      <figure class="product-frame">
+        <img src="./assets/project-previews/aquaguard-ai.png" alt="AquaGuard AI private incident monitoring login screen">
+        <figcaption>Responsive authentication entry point for the AquaGuard workspace.</figcaption>
+      </figure>
+    </section>
+
+    <section class="case-section" id="architecture">
+      <div class="section-heading-row">
+        <div><div class="section-label">03 · Architecture</div><h2>One connected processing pipeline.</h2></div>
+        <p>Typed frontend requests move through secure APIs into processing services, computer-vision modules, and private persistence.</p>
+      </div>
+      <div class="architecture-flow" role="img" aria-label="AquaGuard architecture: React interface to FastAPI, services, computer vision and MongoDB evidence storage">
+        <article><span>01</span><strong>React + TypeScript</strong><small>Dashboard, live view, incidents, cameras</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>02</span><strong>FastAPI</strong><small>REST routes, WebSockets, authentication</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>03</span><strong>Service layer</strong><small>Video jobs, alerts, reports, evidence</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>04</span><strong>Vision + risk engine</strong><small>YOLO, tracking, pose, temporal signals</small></article>
+        <div class="flow-arrow">→</div>
+        <article><span>05</span><strong>MongoDB + storage</strong><small>Owner-isolated incidents and media</small></article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="section-label">04 · Product capabilities</div>
+      <h2>More than object detection.</h2>
+      <div class="feature-grid">
+        <article><span>LIVE</span><h3>Camera monitoring</h3><p>Browser-camera and persistent RTSP/HTTP sources with selectable speed and accuracy profiles.</p></article>
+        <article><span>VISION</span><h3>People and pose signals</h3><p>YOLO detection, identity tracking, movement history, pool zones, and pose-based behavioral signals.</p></article>
+        <article><span>RISK</span><h3>Temporal evaluation</h3><p>Multiple independent signals are smoothed over time before a possible danger status is raised.</p></article>
+        <article><span>PRIVATE</span><h3>Owner-isolated evidence</h3><p>Accounts can access only their own cameras, incidents, snapshots, clips, notes, and reports.</p></article>
+        <article><span>REVIEW</span><h3>Incident workflow</h3><p>Searchable notes, acknowledgement, resolution, false-alarm handling, CSV export, and printable reports.</p></article>
+        <article><span>RETENTION</span><h3>Automatic cleanup</h3><p>Incident evidence expires after 24 hours by default to reduce unnecessary storage of sensitive media.</p></article>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="section-label">05 · Engineering decisions</div>
+      <h2>Challenges solved deliberately.</h2>
+      <div class="decision-list">
+        <article><div class="decision-number">01</div><div><h3>Real-time work on limited hardware</h3><p><strong>Solution:</strong> Adjustable inference modes, frame sampling, browser backpressure, and reusable tracking state balance responsiveness with CPU cost.</p></div></article>
+        <article><div class="decision-number">02</div><div><h3>Avoiding single-frame conclusions</h3><p><strong>Solution:</strong> Independent behavioral signals, score smoothing, and a continuous three-second verification window add temporal context before a danger state.</p></div></article>
+        <article><div class="decision-number">03</div><div><h3>Protecting incident evidence</h3><p><strong>Solution:</strong> Account ownership is enforced for incidents and cameras, while scheduled cleanup removes expired snapshots, clips, and database records.</p></div></article>
+        <article><div class="decision-number">04</div><div><h3>Reliable video playback in browsers</h3><p><strong>Solution:</strong> Processed outputs are encoded to H.264 with yuv420p and fast-start metadata for consistent Chrome and Edge playback.</p></div></article>
+      </div>
+    </section>
+
+    <section class="case-section outcome-section">
+      <div>
+        <div class="section-label">06 · Outcome</div>
+        <h2>A complete, reviewable workflow.</h2>
+        <p>The project connects secure accounts, video ingestion, computer vision, live status updates, evidence creation, reporting, and retention into one full-stack application. It demonstrates system design across frontend, backend, data, security, and AI boundaries.</p>
+      </div>
+      <div class="outcome-metrics">
+        <article><strong>24 hr</strong><span>Default evidence retention</span></article>
+        <article><strong>3 sec</strong><span>Continuous danger verification</span></article>
+        <article><strong>2</strong><span>Video inputs: uploads and live cameras</span></article>
+      </div>
+    </section>
+
+    <section class="case-section stack-section">
+      <div class="section-label">07 · Technology stack</div>
+      <h2>Built across the full stack.</h2>
+      <div class="stack-list"><span>React.js</span><span>TypeScript</span><span>Vite</span><span>FastAPI</span><span>Python</span><span>MongoDB</span><span>YOLO</span><span>ByteTrack</span><span>WebSockets</span><span>OpenCV</span><span>FFmpeg</span><span>Docker</span><span>GitHub</span></div>
+    </section>
+
+    <section class="case-section limits-grid">
+      <article>
+        <div class="section-label">08 · Current limitations</div>
+        <h2>Clear boundaries matter.</h2>
+        <ul><li>Educational prototype, not a certified safety device.</li><li>Must never replace trained lifeguards, supervision, barriers, alarms, or emergency procedures.</li><li>Real-time performance depends on available CPU or GPU resources.</li><li>Independent evaluation still requires real, safety-reviewed pool footage and labels.</li></ul>
+      </article>
+      <article>
+        <div class="section-label">09 · Next steps</div>
+        <h2>Roadmap.</h2>
+        <ul><li>Create a recorded-dataset labeling workflow.</li><li>Publish independent precision, recall, and false-alert evaluation.</li><li>Move background processing to a durable worker queue.</li><li>Prepare a secure cloud deployment and monitored alert delivery.</li></ul>
+      </article>
+    </section>
+
+    <section class="case-cta">
+      <div><div class="section-label">Explore the build</div><h2>Review the complete source and documentation.</h2></div>
+      <div class="hero-actions"><a href="https://github.com/Danwinshaju/AquaGuard-AI" target="_blank" rel="noopener" class="button primary">View GitHub ↗</a><a href="./index.html#projects" class="button secondary">Back to projects</a></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Danwin Shaju</span><span>AquaGuard AI · Educational early-warning project</span></footer>
+</body>
+</html>
