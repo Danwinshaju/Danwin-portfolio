@@ -512,6 +512,38 @@ section,#certifications,#resume,#contact,.info-section{
 .ps-chip{font-size:10px;padding:3px 9px;min-height:24px}
 .project-proof{margin:-2px 0 13px}
 
+/* Evidence-led skills */
+.proficiency-grid{grid-template-columns:repeat(3,1fr)}
+.skill-category-note{min-height:48px;margin:-8px 0 22px;color:var(--text3);font-size:12.5px;line-height:1.6}
+.skill-tags{display:flex;flex-wrap:wrap;gap:9px}
+.skill-tags span{display:inline-flex;align-items:center;min-height:30px;padding:6px 11px;border-radius:7px;border:1px solid var(--border);background:rgba(255,255,255,.035);color:var(--text2);font-size:11.5px;line-height:1.25}
+.p-lime .skill-tags span{border-color:rgba(200,241,53,.16)}
+.p-cyan .skill-tags span{border-color:rgba(0,229,255,.14)}
+.p-purple .skill-tags span{border-color:rgba(155,93,229,.18)}
+
+/* Project evidence */
+.project-evidence{display:grid;gap:7px;margin:0 0 16px;padding:12px 14px;border:1px solid var(--border);border-radius:10px;background:rgba(255,255,255,.02)}
+.project-evidence span{display:grid;grid-template-columns:100px 1fr;gap:8px;color:var(--text3);font-size:11px;line-height:1.45}
+.project-evidence strong{color:var(--cyan);font-weight:500}
+
+/* Experience evidence */
+.experience-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.experience-date{flex:0 0 auto;padding:7px 12px;border:1px solid rgba(200,241,53,.22);border-radius:8px;color:var(--lime);font-family:var(--font-mono);font-size:11px}
+.experience-summary{margin-top:8px}
+.experience-list{display:grid;gap:11px;margin:-6px 0 24px;padding:0;list-style:none}
+.experience-list li{position:relative;padding-left:20px;color:var(--text2);font-size:13.5px;line-height:1.65}
+.experience-list li::before{content:'→';position:absolute;left:0;color:var(--lime)}
+
+/* Certificate groups */
+.certificate-group{margin-top:46px}
+.certificate-group+.certificate-group{margin-top:64px}
+.certificate-group-heading{display:flex;align-items:center;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--border)}
+.certificate-group-heading>span{font-family:var(--font-display);font-size:34px;letter-spacing:1px;color:var(--lime)}
+.certificate-group-heading h3{font-size:14px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--text2)}
+.certificate-group .cert-grid{margin-top:24px}
+.cert-meta{display:flex;justify-content:space-between;gap:16px;align-items:center}
+.cert-meta>span{flex:0 0 auto;font-family:var(--font-mono);font-size:10px;color:var(--lime)}
+
 /* Working principles bento */
 .soft-skills{position:relative;display:block;padding:0;background:transparent;border:0;overflow:visible}
 .soft-skills::before{content:'';position:absolute;inset:-24px -20px auto auto;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(200,241,53,.1),transparent 68%);pointer-events:none}
@@ -586,6 +618,10 @@ section,#certifications,#resume,#contact,.info-section{
   .about-photo-frame{height:auto;aspect-ratio:4/5}
   .about-text-side p{font-size:14px;line-height:1.75}
   .skills-grid{grid-template-columns:1fr}
+  .experience-heading{display:block}
+  .experience-date{display:inline-flex;margin:2px 0 18px}
+  .project-evidence span{grid-template-columns:1fr;gap:2px}
+  .cert-meta{align-items:flex-start;flex-direction:column;gap:5px}
   .soft-skills{padding:0;gap:30px}
   .skills-header,.contact-heading-row{margin-bottom:38px}
   .proj-filters{margin-bottom:34px}
