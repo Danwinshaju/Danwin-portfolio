@@ -318,6 +318,11 @@ section{padding:110px var(--px)}
 .proj-desc{font-size:13.5px;color:var(--text2);line-height:1.75;margin-bottom:20px;font-weight:300;flex:1}
 .proj-stack{display:flex;flex-wrap:wrap;gap:7px}
 .ps-chip{font-family:var(--font-mono);font-size:11px;padding:4px 12px;border-radius:6px;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text3)}
+.proj-actions{display:flex;gap:10px;margin-top:18px;padding-top:18px;border-top:1px solid var(--border)}
+.proj-link{display:inline-flex;align-items:center;justify-content:center;flex:1;padding:11px 14px;border-radius:10px;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:transform .2s,box-shadow .2s,border-color .2s}
+.proj-link:hover{transform:translateY(-2px)}
+.primary-link{background:var(--lime);color:#050709;box-shadow:0 10px 24px rgba(200,241,53,.12)}
+.secondary-link{background:rgba(255,255,255,.03);border:1px solid var(--border);color:var(--text)}
 
 /* ─── EDUCATION / EXPERIENCE ─────────────────── */
 .info-section{padding:110px var(--px);background:var(--bg)}
