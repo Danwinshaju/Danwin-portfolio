@@ -274,6 +274,7 @@ section{padding:110px var(--px)}
 .proj-card:hover{transform:translateY(-6px);border-color:var(--border2)}
 .proj-thumb{height:200px;position:relative;display:flex;align-items:center;justify-content:center;font-size:56px;overflow:hidden}
 .aquaguard-thumb{background:radial-gradient(circle at 70% 25%,rgba(0,229,255,.28),transparent 32%),linear-gradient(135deg,#03141b,#062f3b 50%,#061c28)}
+.teamflow-thumb{background:radial-gradient(circle at 18% 18%,rgba(200,241,53,.18),transparent 28%),radial-gradient(circle at 82% 24%,rgba(0,229,255,.22),transparent 26%),linear-gradient(135deg,#07120d,#122d1f 38%,#08171d 100%)}
 .nexa-react-thumb{background:radial-gradient(circle at 30% 25%,rgba(155,93,229,.32),transparent 32%),linear-gradient(135deg,#11071f,#25104a 55%,#07182d)}
 .project-mark{display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;z-index:1}
 .project-mark span{font-family:var(--font-display);font-size:64px;letter-spacing:5px;color:var(--text);line-height:.8;text-shadow:0 0 36px rgba(0,229,255,.22)}
